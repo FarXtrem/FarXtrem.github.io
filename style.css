@@ -39,3 +39,45 @@ html, body{
     margin-right: auto;
     border-radius: 100px;
   }
+
+  .fleche{
+    color: #f7f7e8;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    animation: animation 0.8s alternate infinite;
+    font-size: 40px;
+    text-decoration: none;
+  }
+  .fleche:hover{
+      color: #c7cfb7;
+  }
+
+@keyframes animation{
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0.8;
+        transform: translateY(10px);
+    }
+}
+
+.banner{
+    height: 100vh;
+}
+
+.bannerh1{
+    color: #f7f7e8;
+    text-align: center;
+    padding-top: 40vh;
+    font-family: 'balooregular';
+    filter: none;
+}
+
+#banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.pixabay.com/photo/2016/02/19/11/19/office-1209640_1280.jpg);
+        filter: sepia(1);
+        -webkit-filter: sepia(1);
+
+}

@@ -6,22 +6,30 @@ html, body{
     padding: 0;
 }
 
-#navbar{
-    position: fixed;
-    left: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 250px;
+.navbar{
+  z-index: 1;
+  position: fixed;
+  justify-content: left;
+  text-align: center;
+  margin: 1%;
+  margin-left: 0%;
+  width: 100%;
+  background-color: #fcf8ec;
+  
 }
 
-#container{
-    background-color: #F0F0F0;
-    min-height: 100vh;
-    margin-left: 250px;
-    padding: 20px;
+color-change{
+  background-color: #F45B69;
+  height: 50px;
+  color: rgba(255,254,255,.8);
+  z-index: 1;
 }
+
+.navbar a{
+    color: #79a3b1;
+}
+
+
 
 .card {
     margin: 20px auto;
@@ -41,7 +49,7 @@ html, body{
   }
 
   .fleche{
-    color: #f7f7e8;
+    color: #fcf8ec;
     display: flex;
     justify-content: center;
     padding-top: 30px;
@@ -68,7 +76,7 @@ html, body{
 }
 
 .bannerh1{
-    color: #f7f7e8;
+    color: #fcf8ec;
     text-align: center;
     padding-top: 40vh;
     font-family: 'balooregular';
@@ -82,59 +90,3 @@ html, body{
         background-size: cover;
         margin: -20px;
 }
-
-#title_1{
-    position: relative;
-    font-size: calc(15px + 12vh);
-    line-height: calc(20px + 20vh);
-    text-shadow: 0 0 5px #696969, 0 0 15px #696969, 0 0 20px #696969, 0 0 40px #696969, 0 0 60px #1a1a1a, 0 0 10px #ff00cc, 0 0 98px #ff00cc;
-    color: #696969;
-    /*font-family: 'Lovers Quarrel', cursive;*/
-    /*font-family: 'Italianno', cursive;*/
-    /*font-family: 'Niconne', cursive;*/
-    font-family: 'Rouge Script', cursive;
-    text-align: center;
-    animation: blink 5s infinite;
-    -webkit-animation: blink 5s infinite;
-}
-@-webkit-keyframes blink {
-    20%,
-    24%,
-    55% {
-      color: #111;
-      text-shadow: none;
-    }
-  
-    0%,
-    19%,
-    21%,
-    23%,
-    25%,
-    54%,
-    56%,
-    100% {
-    text-shadow: 0 0 5px #696969 , 0 0 15px #000000, 0 0 20px #696969, 0 0 40px #696969, 0 0 60px #000000, 0 0 10px #ff0084, 0 0 98px #dc1ef6 ;
-      color: #696969;
-    }
-  }
-  
-  @keyframes blink {
-    20%,
-    24%,
-    55% {
-      color: #111;
-      text-shadow: none;
-    }
-  
-    0%,
-    19%,
-    21%,
-    23%,
-    25%,
-    54%,
-    56%,
-    100% {
-    text-shadow: 0 0 5px #696969, 0 0 15px #f7f7e8, 0 0 20px #696969, 0 0 40px #f7f7e8, 0 0 60px #f7f7e8, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-      color: #f7f7e8; /**********/
-    }
-  }

@@ -10,33 +10,32 @@
     <title>Document</title>
 </head>
 <body>
-    <nav id="navbar" class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">Menu</a>
-        <nav class="nav nav-pills flex-column">
-            <a class="nav-link" href="#banner">Accueil</a>
-        </nav>
-        <nav class="nav nav-pills flex-column">
-            <a class="nav-link ms-3 my-1" href="#presentation">Présentation</a>
-        </nav>
-        <nav class="nav nav-pills flex-column">
-            <a class="nav-link ms-3 my-1" href="#formations">Parcours et Formation</a>
-        </nav>
-        <nav class="nav nav-pills flex-column">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-        </nav>
-        <nav class="nav nav-pills flex-column">
-            <a class="nav-link" href="#contact">Contact</a>
-        </nav>
-    </nav>
-      
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#banner">Accueil</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#presentation">Présentation</a>
+              <a class="nav-link" href="#formations">Parcours et Formation</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
     <div id="container" data-bs-spy="scroll" data-bs-target="navbar" data-bs-offset="0" tabindex="0">
         <section id="banner" class="banner">
             <div data-aos="fade-down"
             data-aos-duration="1500">
-                <H1 class="bannerh1 " id="title_1">Développeur Web</H1>
+                <H1 class="bannerh1 ">Développeur Web</H1>
                 <a class="fas fa-angle-double-down fleche" href="#presentation"></a>
             </div>
         </section>
+        
     
         <section id="presentation">
             <div data-aos="zoom-in"
@@ -81,5 +80,8 @@
     <script>
       AOS.init();
     </script>
+
+<script src="monscript.js"></script>
+
 </body>
 </html>
